@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteControlSharedLibrary", "RemoteControlSharedLibrary.csproj", "{F53ED27A-D2E8-4902-A887-C296C6C1EC99}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoteControlCoreLibrary", "..\RemoteControlCoreLibrary\RemoteControlCoreLibrary.csproj", "{19486076-ECB5-4BB7-97BF-5FC34C2B50C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F53ED27A-D2E8-4902-A887-C296C6C1EC99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F53ED27A-D2E8-4902-A887-C296C6C1EC99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F53ED27A-D2E8-4902-A887-C296C6C1EC99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F53ED27A-D2E8-4902-A887-C296C6C1EC99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19486076-ECB5-4BB7-97BF-5FC34C2B50C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19486076-ECB5-4BB7-97BF-5FC34C2B50C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19486076-ECB5-4BB7-97BF-5FC34C2B50C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19486076-ECB5-4BB7-97BF-5FC34C2B50C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E3A790C-A0D8-43F8-B481-4C097256E87F}
+	EndGlobalSection
+EndGlobal

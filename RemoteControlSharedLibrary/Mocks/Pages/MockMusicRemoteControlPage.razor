@@ -1,0 +1,22 @@
+﻿@page "/SimpleMoviesRemoteControl"
+@if (DataContext is null)
+{
+    return;
+}
+@if (_status != "")
+{
+    <div style="font-size: 8vh;">
+        @_status
+    </div>
+    return;
+}
+
+<div style="font-size: 7vh;">
+    
+    <div>
+        <BootstrapPrimaryButton FontSize="5vh" OnClick="DataContext.PauseAsync">
+            Pause
+        </BootstrapPrimaryButton>
+        
+    </div>
+</div>
