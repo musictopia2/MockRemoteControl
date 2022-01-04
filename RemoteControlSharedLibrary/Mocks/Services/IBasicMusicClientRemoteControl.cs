@@ -11,4 +11,6 @@ public interface IBasicMusicClientRemoteControl
     Task PauseAsync();
     Task InitializeAsync();
     Action<string>? HostStateInfo { get; set; }
+    Action<TemporaryModel>? HostConnect { get; set; }
+
 }

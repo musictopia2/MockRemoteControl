@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
+		<TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+		<UseWPF>true</UseWPF>
+		<ImplicitUsings>true</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<IsPackable>false</IsPackable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.1\contentFiles\any\net6.0\wwwroot\autoscroll.js" />
+		<Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.1\contentFiles\any\net6.0\wwwroot\basichelpers.js" />
+		<Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.1\contentFiles\any\net6.0\wwwroot\center.js" />
+		<Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.1\contentFiles\any\net6.0\wwwroot\clipboard.js" />
+		<Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.1\contentFiles\any\net6.0\wwwroot\elementselector.js" />
+		<Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.1\contentFiles\any\net6.0\wwwroot\fullscreen.js" />
+		<Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.1\contentFiles\any\net6.0\wwwroot\highlighter.js" />
+		<Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.1\contentFiles\any\net6.0\wwwroot\hover.js" />
+		<Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.1\contentFiles\any\net6.0\wwwroot\keystroke.js" />
+		<Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.1\contentFiles\any\net6.0\wwwroot\operatingsystemhelpers.js" />
+		<Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.1\contentFiles\any\net6.0\wwwroot\Resize.js" />
+		<Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.1\contentFiles\any\net6.0\wwwroot\ResizeModule.js" />
+		<Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.1\contentFiles\any\net6.0\wwwroot\scrolllistener.js" />
+		<Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.1\contentFiles\any\net6.0\wwwroot\selectalltext.js" />
+		<Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.1\contentFiles\any\net6.0\wwwroot\simplecarousel.js" />
+		<Content Remove="C:\Users\music\.nuget\packages\basicblazorlibrary\3.0.1\contentFiles\any\net6.0\wwwroot\text.js" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="6.0.101-preview.10.2068" />
+		<PackageReference Include="BasicBlazorLibrary" Version="3.0.1" />
+		<PackageReference Include="CommonBasicLibraries" Version="5.0.6" />
+		<PackageReference Include="WPFStartupLibrary" Version="2.0.1" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <ProjectReference Include="..\..\RemoteControlCoreLibrary\RemoteControlCoreLibrary.csproj" />
+	  <ProjectReference Include="..\..\RemoteControlSharedLibrary\RemoteControlSharedLibrary.csproj" />
+	  <ProjectReference Include="..\Host.Blazor\Host.Blazor.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Update="wwwroot\app.css">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Update="wwwroot\bootstrap.min.css">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Update="wwwroot\bootstrap.min.css.map">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Update="wwwroot\Index.html">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+</Project>

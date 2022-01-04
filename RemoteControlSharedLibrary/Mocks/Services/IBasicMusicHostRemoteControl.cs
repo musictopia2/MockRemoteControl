@@ -14,6 +14,7 @@ public interface IBasicMusicHostRemoteControl
     //this system allows unlimited remote controls and unlimited possibilities for messages sent and received.
 
     Task InitializeAsync();
+    Task SendConnectedAsync(TemporaryModel model);
     //this would allow to send progress (or any information to the clients)
     //Task SendProgressAsync(MoviesModel movie);
 }

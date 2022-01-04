@@ -5,4 +5,14 @@ public class BasicMusicHostRemoteControl : BaseRemoteControlHostClass, IBasicMus
     {
     }
     public Func<Task>? Pause { get; set; }
+
+    public async Task SendConnectedAsync(TemporaryModel model)
+    {
+        await SendCustomDataAsync("Connected", model);
+    }
+
+    protected override void RegisterCustomMethods()
+    {
+        Hub!.On("Pause", () => Pause!.Invoke());
+    }
 }
