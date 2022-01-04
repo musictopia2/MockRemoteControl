@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BasicBlazorLibrary" Version="3.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RemoteControlCoreLibrary\RemoteControlCoreLibrary.csproj" />
+    <ProjectReference Include="..\RemoteControlSharedLibrary\RemoteControlSharedLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

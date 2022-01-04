@@ -1,7 +1,7 @@
 ﻿namespace RemoteControlSharedLibrary.Mocks.Services;
 public class BasicMusicClientRemoteControl : BaseRemoteControlClientClass, IBasicMusicClientRemoteControl
 {
-    public BasicMusicClientRemoteControl(IRemoteControlEndPoint endPoint, ITitle title) : base(endPoint, title)
+    public BasicMusicClientRemoteControl(IRemoteControlEndPoint endPoint, IMusicTitle title) : base(endPoint, title)
     {
     }
     public async Task PauseAsync()

@@ -10,7 +10,7 @@ public partial class MockMusicRemoteControlPage
 {
     [Inject]
     private IBasicMusicClientRemoteControl? DataContext { get; set; }
-    private string _status = "";
+    private string _status = "Starting";
     protected override async Task OnInitializedAsync()
     {
         DataContext!.HostStateInfo = item =>
